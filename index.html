@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samaneh Hosseini Moghaddam - Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global */
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Roboto', sans-serif; margin: 0; background-color: #f4f6f8; color: #333; }
+    a { color: #e74c3c; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Navigation */
+    nav { background: #2c3e50; position: sticky; top: 0; z-index: 100; display: flex; justify-content: center; padding: 10px 0; }
+    nav a { color: #fff; margin: 0 15px; font-weight: 500; text-transform: uppercase; font-size: 0.9em; }
+    nav a:hover { color: #e74c3c; }
+
+    /* Header */
+    header { background-color: #34495e; color: #fff; padding: 60px 20px; text-align: center; }
+    header img { width: 160px; height: 160px; border-radius: 50%; border: 4px solid #fff; object-fit: cover; margin-bottom: 20px; }
+    header h1 { margin: 10px 0 5px; }
+    header h3 { font-weight: 400; margin: 0; }
+    .download-cv { display: inline-block; margin-top: 15px; padding: 10px 20px; background: #e74c3c; color: #fff; border-radius: 5px; font-weight: 500; }
+    .download-cv:hover { background: #c0392b; }
+
+    /* Section */
+    section { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+    section h2 { color: #2c3e50; border-bottom: 3px solid #e74c3c; padding-bottom: 8px; margin-bottom: 20px; }
+
+    /* Card Layout */
+    .card-container { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .card { background-color: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); flex: 1 1 300px; padding: 20px; transition: transform 0.2s; }
+    .card:hover { transform: translateY(-5px); }
+    .card h3 { margin-top: 0; color: #e74c3c; }
+    .card p, .card ul { margin: 10px 0; }
+
+    /* Two-column layout for skills */
+    .two-columns { display: flex; flex-wrap: wrap; gap: 20px; }
+    .column { flex: 1 1 45%; }
+
+    /* Certificates Images */
+    .certificate-img { width: 100%; border-radius: 8px; margin-bottom: 10px; }
+
+    footer { text-align: center; padding: 20px; color: #777; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <a href="#summary">Summary</a>
+  <a href="#education">Education</a>
+  <a href="#industry">Industry & Certificates</a>
+  <a href="#publications">Publications</a>
+  <a href="#skills">Skills</a>
+  <a href="#mentoring">Mentoring</a>
+  <a href="#honors">Honors</a>
+  <a href="#referees">Referees</a>
+</nav>
+
+<!-- Header -->
+<header>
+  <img src="images/profile.jpg" alt="Profile Picture">
+  <h1>Samaneh Hosseini Moghaddam</h1>
+  <h3>Postdoctoral Researcher | ML | NLP | Computational Social Science</h3>
+  <a class="download-cv" href="files/CV.pdf" target="_blank">Download CV</a>
+</header>
+
+<!-- Summary -->
+<section id="summary">
+  <h2>Summary</h2>
+  <div class="card">
+    <p>Self-motivated and innovative researcher with 10+ years of experience in ML, deep learning, NLP, and computational social science. Focused on leveraging LLMs for abusive language detection, bias reduction, dataset integration, and adaptive learning. Experienced in developing robust, fair, and secure AI for real-world applications. Proven track record in publishing in high-impact venues, mentoring students, and leading interdisciplinary collaborations. Recognized by Iran National Elite Foundation, Brilliant Talents of SBU, and NODET.</p>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education">
+  <h2>Education</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Postdoc | University of Toronto</h3>
+      <p>Project: Abusive language detection for identifying cyber-violence against professionals serving the public</p>
+      <p>Supervisors: Dr. Kelly Lyons, Dr. Cheryl Regehr, Dr. Frank Rudzicz</p>
+    </div>
+    <div class="card">
+      <h3>Ph.D. | Shahid Beheshti University</h3>
+      <p>Dissertation: Detecting fake accounts controlled by social bots</p>
+      <p>Supervisor: Dr. Maghsoud Abbaspour</p>
+      <p>Awards: Iran National Elite Foundation Research Scholarship</p>
+    </div>
+    <div class="card">
+      <h3>M.Sc. | Tarbiat Modares University</h3>
+      <p>Thesis: Software watermarking for software license verification</p>
+      <p>Supervisor: Dr. Saeed Jalili</p>
+      <p>Award: ITRC Research Grant</p>
+    </div>
+    <div class="card">
+      <h3>B.Sc. | Ferdowsi University</h3>
+      <p>Project: Processing Persian sentences to extract keywords in search engines</p>
+      <p>Supervisor: Dr. Mohsen Kahani</p>
+      <p>Honored as top outstanding student</p>
+    </div>
+  </div>
+</section>
+
+<!-- Industry & Certificates -->
+<section id="industry">
+  <h2>Industry Experience & Certificates</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Industry Experience</h3>
+      <ul>
+        <li>Product Owner / Project Leadership (5+ years)</li>
+        <li>Applied AI & ML in real-world systems</li>
+        <li>Cross-functional collaboration with industry partners</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Certificates</h3>
+      <img src="images/certificate1.jpg" alt="Certificate 1" class="certificate-img">
+      <img src="images/certificate2.jpg" alt="Certificate 2" class="certificate-img">
+      <p>Add more certificate images as needed</p>
+    </div>
+  </div>
+</section>
+
+<!-- Publications -->
+<section id="publications">
+  <h2>Selected Publications</h2>
+  <div class="card-container">
+    <div class="card">
+      <ul>
+        <li>Enhancing ML in abusive language detection with dataset aggregation, IEEE CASC, 2025</li>
+        <li>Friendship Preference: Scalable Features for Social Bot Detection, IEEE TDSC, 2022</li>
+        <li>Economic feasibility study for stealthy socialbot network establishment, IET Inf Security, 2020</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="two-columns">
+    <div class="column">
+      <h3>AI & NLP</h3>
+      <p>Machine Learning, Deep Learning, NLP, LLMs, Adaptive Learning</p>
+    </div>
+    <div class="column">
+      <h3>HCI & Social Computing</h3>
+      <p>Human-Computer Interaction, Computational Social Science, Social Network Analysis</p>
+    </div>
+    <div class="column">
+      <h3>Programming & Tools</h3>
+      <p>Python (PyTorch, TensorFlow, HuggingFace), Data Analysis & Visualization</p>
+    </div>
+    <div class="column">
+      <h3>Research & Leadership</h3>
+      <p>Project Leadership, Cross-functional Collaboration, Translating AI Research into Applications</p>
+    </div>
+  </div>
+</section>
+
+<!-- Mentoring -->
+<section id="mentoring">
+  <h2>Mentoring & Lectureship</h2>
+  <div class="card-container">
+    <div class="card">
+      <ul>
+        <li>Mentoring MSc students and Research Assistants (2023-Present)</li>
+        <li>Lectureship: Software Engineering, Computation Theory, Programming Foundations</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Honors -->
+<section id="honors">
+  <h2>Honors & Awards</h2>
+  <div class="card-container">
+    <div class="card">
+      <ul>
+        <li>Iran National Elite Foundation, 2015</li>
+        <li>Brilliant Talents of SBU, 2013</li>
+        <li>First place in AI & Robotics competitions, 2012</li>
+        <li>NODET Admission, 1996</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Referees -->
+<section id="referees">
+  <h2>Referees</h2>
+  <div class="card-container">
+    <div class="card">
+      <ul>
+        <li>Dr. Kelly Lyons, University of Toronto – <a href="mailto:kelly.lyons@utoronto.ca">kelly.lyons@utoronto.ca</a></li>
+        <li>Dr. Cheryl Regehr, University of Toronto – <a href="mailto:cheryl.regehr@utoronto.ca">cheryl.regehr@utoronto.ca</a></li>
+        <li>Dr. Fatemeh Faraji Daneshgar, Polytechnique Montreal – <a href="mailto:fateme.faraji-daneshgar@polymtl.ca">fateme.faraji-daneshgar@polymtl.ca</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Samaneh Hosseini Moghaddam | <a href="mailto:samaneh@example.com">samaneh@example.com</a>
+</footer>
+
+</body>
+</html>
