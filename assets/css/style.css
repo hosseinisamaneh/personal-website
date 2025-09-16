@@ -1,47 +1,111 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  color: #333;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    min-height: 100vh;
 }
 
-header {
-  background: #1a1a1a;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.sidebar img.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 1rem;
+.sidebar h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
+.sidebar p a {
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 20px;
 }
 
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sidebar nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.sidebar nav a:hover {
+    background-color: #333;
+    padding-left: 10px;
+}
+
+/* Main content */
 main {
-  padding: 2rem;
+    margin-left: 250px;
+    padding: 30px;
+    flex: 1;
 }
 
-footer {
-  background: #f4f4f4;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+h2 {
+    color: #222;
+    margin-bottom: 15px;
 }
 
-.profile-img {
-  width: 200px;
-  border-radius: 50%;
-  margin-top: 1rem;
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .sidebar img.profile-pic {
+        width: 60px;
+        height: 60px;
+    }
+    main {
+        margin-left: 0;
+        padding: 20px;
+    }
 }
