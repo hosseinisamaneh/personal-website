@@ -4,7 +4,7 @@ Welcome to my personal website! This site showcases my **research, education, pu
 
 You can view the live website here:  
 
-[**Visit My Website**](https://hosseinisamaneh.github.io/personal-website/)
+[**Visit My Website**](https://samanehmoghaddam.github.io/personal-website/)
 
 ---
 
